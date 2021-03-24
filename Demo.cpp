@@ -14,6 +14,10 @@ using ariel::Direction;
 using namespace std;
 
 int main() {
+    unsigned  int a = 4294967295;
+    a++;
+    std::cout << a << std::endl;
+
 	ariel::Board board;
 	board.post(/*row=*/100, /*column=*/200, Direction::Horizontal, "abcd");
 	cout << board.read(/*row=*/99, /*column=*/201, Direction::Vertical, /*length=*/3) << endl;  
